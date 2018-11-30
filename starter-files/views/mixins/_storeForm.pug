@@ -1,4 +1,5 @@
-mixin storeForm(store = {})
+mixin storeForm(store)
+    - store = store || {}
     form(action="/add" method="POST" class="card")
         label(for="name") Name
         input(type="text" name="name")
